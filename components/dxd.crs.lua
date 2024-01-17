@@ -6,7 +6,7 @@
 Begin editing below:    ]]
 
 --Set this to true while editing and false when you have finished
-disableSave = false
+disableSave = true
 --Remember to set this to false once you are done making changes
 --Then, after you save and apply it, save your game too
 
@@ -2047,7 +2047,11 @@ end
 
 function updateManapool()
   local valueZED = getValue("ZED")
-  local calcManapool = math.max(0, valueZED)
+  local valueSIZ = getValue("SIZ")
+
+  local dmSIZ = getDMByValue(valueSIZ)
+
+  local calcManapool = math.max(0, valueZED + dmSIZ)
   local valueManapool = getValue("Manapool", true) or calcManapool
   local originalManapool = getValue("Manapool", true)
 
