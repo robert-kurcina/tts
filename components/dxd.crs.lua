@@ -51,8 +51,9 @@ updateTriggerText["SIZ"] = true
 updateTriggerText["ZED"] = true
 
 updateTriggerText["CharacterLevel"] = true
-updateTriggerText["stature"] = true
-updateTriggerText["build"] = true
+updateTriggerText["Stature"] = true
+updateTriggerText["Build"] = true
+updateTriggerText["Profile"] = true
 
 updateTriggerText["Hitpoints"] = true
 updateTriggerText["Bodypoints"] = true
@@ -83,8 +84,9 @@ saveAttrNames["SIZ"] = true
 saveAttrNames["ZED"] = true
 
 saveAttrNames["CharacterLevel"] = true
-saveAttrNames["stature"] = true
-saveAttrNames["build"] = true
+saveAttrNames["Stature"] = true
+saveAttrNames["Build"] = true
+saveAttrNames["Profile"] = true
 
 saveAttrNames["Hitpoints"] = true
 saveAttrNames["Bodypoints"] = true
@@ -618,8 +620,8 @@ defaultButtonData = {
             tooltip   = "The scalar value of something given an Index value in the filed at the left."
         },
         {
-            attr      = "build",
-            pos       = {0.555, -0.01,0.950},
+            attr      = "Build",
+            pos       = {0.555, -0.01, 0.950},
             rows      = 1.1,
             width     = 600,
             font_size = 300,
@@ -629,11 +631,11 @@ defaultButtonData = {
             scale     = {0.05, 0.05, 0.05},
             rotation  = rotationFlipped,
             validation= 2,
-            tooltip   = "The Build of the character. Determines SIZ."
+            tooltip   = "The Build of the character.\nDetermines SIZ and Weight."
         },
         {
-            attr      = "stature",
-            pos       = {0.280, -0.01,0.950},
+            attr      = "Stature",
+            pos       = {0.280, -0.01, 0.950},
             rows      = 1.1,
             width     = 600,
             font_size = 300,
@@ -643,8 +645,22 @@ defaultButtonData = {
             scale     = {0.05, 0.05, 0.05},
             rotation  = rotationFlipped,
             validation= 3,
-            tooltip   = "The Stature of the character. Determines MOV and used in Combat."
+            tooltip   = "The Stature of the character.\nDetermines MOV and used in Combat, and Height."
         },
+        {
+          attr      = "Profile",
+          pos       = {0.005, -0.01, 0.950},
+          rows      = 1.1,
+          width     = 600,
+          font_size = 300,
+          label     = "50",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          rotation  = rotationFlipped,
+          validation= 3,
+          tooltip   = "The Profile of the character. \nAverage of Stature and Build. Determines Close Combat DMs."
+      },
         --FRONT
         {
             attr      = "Name",
@@ -1558,6 +1574,7 @@ function updateOtherStats()
   updateManapool()
 
   updateBackName()
+  updateProfileRank()
 end
 
 function getScalarValue(givenIndex)
@@ -1669,7 +1686,7 @@ function updateMovementAbility()
   local valueSTR = getValue("STR")
   local valueSIZ = getValue("SIZ")
   local valueREF = getValue("REF")
-  local valueStature = getValue("stature")
+  local valueStature = getValue("Stature")
 
   local halfStature = math.floor(valueStature/20)
   local halfPower = math.floor((valueSTR + valueREF)/10)
@@ -1726,7 +1743,7 @@ function updateJumpingAbility()
   local valueSTR = getValue("STR")
   local valueMOV = getValue("MOV")
   local valuePhysicality = math.max(valueSIZ, valueSTR)
-  local valueStature = getValue("stature")
+  local valueStature = getValue("Stature")
 
   local valueUp  = math.max(valueMOV - 15, math.floor(valueSTR/2 - valueSIZ))
   local valueBroad  = math.max(valueUp + 2, math.floor(valueSTR - valueSIZ + valueStature/10 - 6))
@@ -1837,7 +1854,7 @@ end
 
 function updateSIZ()
     local valueSIZ = getValue("SIZ")
-    local valueBuild = getValue("build")
+    local valueBuild = getValue("Build")
     local computedSIZ = math.floor(0.51 + 10/3*(valueBuild - 10))
 
     local inputIndex = textInputHash["SIZ"]
@@ -1866,6 +1883,15 @@ function updateBackName()
   self.editInput({index=backNameIndex-1, label=valueBackName, value=valueName})
 end
 
+function updateProfileRank()
+  local valueStature = getValue("Stature")
+  local valueBuild = getValue("Build")
+  local profileRank = math.floor(valueStature/2 + valueBuild/2)
+
+  local inputIndex = textInputHash["Profile"]
+  self.editInput({index=inputIndex-1, value=profileRank, tooltip=profileRank})
+end
+
 function updateHitpoints(value)
   local starCount = getStarCount()
 
@@ -1889,7 +1915,7 @@ end
 function updateBodypoints()
   local inputIndex = textInputHash["Bodypoints"]
 
-  local valueBuild = getValue("build")
+  local valueBuild = getValue("Build")
   local valueSIZ = getValue("SIZ")
   local calcBodypoints = math.max(0, math.min(math.floor(3*valueBuild/10), valueSIZ))
   local valueBodypoints = getValue("Bodypoints", true) or calcBodypoints
