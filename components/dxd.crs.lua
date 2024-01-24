@@ -958,7 +958,7 @@ defaultButtonData = {
         },
         {
             attr      = "WealthRank",
-            pos       = {-0.052, 0.2,0.583},
+            pos       = {-0.068, 0.2,0.583},
             rows      = 1.2,
             width     = 680,
             font_size = 400,
@@ -971,7 +971,7 @@ defaultButtonData = {
         },
         {
             attr      = "SocialRank",
-            pos       = {-0.052, 0.2,0.648},
+            pos       = {-0.068, 0.2,0.648},
             rows      = 1.2,
             width     = 680,
             font_size = 400,
@@ -984,7 +984,7 @@ defaultButtonData = {
         },
         {
             attr      = "ProfessionRank",
-            pos       = {-0.052, 0.2,0.715},
+            pos       = {-0.068, 0.2,0.715},
             rows      = 1.2,
             width     = 680,
             font_size = 400,
@@ -997,7 +997,7 @@ defaultButtonData = {
         },
         {
             attr      = "FavorDice",
-            pos       = {-0.052, 0.2,0.782},
+            pos       = {-0.068, 0.2,0.782},
             rows      = 1.2,
             width     = 680,
             font_size = 400,
@@ -1010,7 +1010,7 @@ defaultButtonData = {
         },
         {
             attr      = "Cellburn",
-            pos       = {-0.052, 0.2,0.848},
+            pos       = {-0.068, 0.2,0.848},
             rows      = 1.2,
             width     = 680,
             font_size = 400,
@@ -1023,7 +1023,7 @@ defaultButtonData = {
         },
         {
             attr      = "Manapool",
-            pos       = {-0.052, 0.2,0.917},
+            pos       = {-0.068, 0.2,0.917},
             rows      = 1.2,
             width     = 680,
             font_size = 400,
@@ -1035,306 +1035,366 @@ defaultButtonData = {
             tooltip   = "Manapool. Spend these points to speed up magic, make it more powerful, make it safer, etc."
         },
         {
-            attr      = "CCA",
-            pos       = {-0.610, 0.2,-0.21},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 800,
-            label     = "7",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            validation= 2,
-            tooltip   = "Close Combat Ability. Hit Test."
-        },
-        {
-            attr      = "RCA",
-            pos       = {-0.495, 0.2,-0.21},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 800,
-            label     = "7",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            validation= 2,
-            tooltip   = "Range Combat Ability. Hit Test."
-        },
-        {
-            attr      = "REF",
-            pos       = {-0.382, 0.2,-0.21},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 800,
-            label     = "7",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            validation= 2,
-            tooltip   = "Reflexes. Detect Tests and Defender Hit Tests."
-        },
-        {
-            attr      = "INT",
-            pos       = {-0.267, 0.2,-0.21},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 800,
-            label     = "7",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            validation= 2,
-            tooltip   = "Intellect. Learning new things."
-        },
-        {
-            attr      = "KNO",
-            pos       = {-0.150, 0.2,-0.21},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 800,
-            label     = "7",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            validation= 2,
-            tooltip   = "Knowledge. Knowing things."
-        },
-        {
-            attr      = "PRE",
-            pos       = {-0.035, 0.2,-0.21},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 800,
-            label     = "7",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            validation= 2,
-            tooltip   = "Presence. Command, Beauty, Grace, and Charm."
-        },
-        {
-            attr      = "POW",
-            pos       = {0.075, 0.2,-0.21},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 800,
-            label     = "7",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            validation= 2,
-            tooltip   = "Willpower. Resist effects of mental, psychological, and emotional attacks."
-        },
-        {
-            attr      = "STR",
-            pos       = {0.190, 0.2,-0.21},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 800,
-            label     = "7",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            validation= 2,
-            tooltip   = "Strength. Raw muscularity. Attacker Damage Test."
-        },
-        {
-            attr      = "FOR",
-            pos       = {0.305, 0.2,-0.21},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 800,
-            label     = "7",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            validation= 2,
-            tooltip   = "Fortitude. Health and ability to ignore to damage. Defender Damage Test."
-        },
-        {
-            attr      = "MOV",
-            pos       = {0.420, 0.2,-0.21},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 800,
-            label     = "7",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            validation= 2,
-            tooltip   = "Movement rate for Running."
-        },
-        {
-            attr      = "SIZ",
-            pos       = {0.533, 0.2,-0.21},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 800,
-            label     = "7",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            validation= 2,
-            tooltip   = "Size. Physical size index. Heavy characters usually can take more physical damage."
-        },
-        {
-            attr      = "ZED",
-            pos       = {0.645, 0.2,-0.21},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 800,
-            label     = "7",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            validation= 2,
-            tooltip   = "Zero-th factor. Affects the range of magic abilities. Start with this much mana to spend."
-        },
-        {
-            attr      = "CCADM",
-            pos       = {-0.610, 0.2,-0.13},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 400,
-            label     = "+",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            tooltip   = "Close Combat Ability DM. Add to Close Combat Hit Test."
-        },
-        {
-            attr      = "RCADM",
-            pos       = {-0.495, 0.2,-0.13},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 400,
-            label     = "+",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            tooltip   = "Range Combat Ability DM. Add to Attacker Range Combat Hit Test."
-        },
-        {
-            attr      = "REFDM",
-            pos       = {-0.382, 0.2,-0.13},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 400,
-            label     = "+",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            tooltip   = "Reflexes DM. Add to Defender Range Combat Hit Test and Defender Detect Test."
-        },
-        {
-            attr      = "INTDM",
-            pos       = {-0.267, 0.2,-0.13},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 400,
-            label     = "+",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            tooltip   = "Intellect DM. Add to Initiative Test and tests involving intelligence or guessing."
-        },
-        {
-            attr      = "KNODM",
-            pos       = {-0.150, 0.2,-0.13},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 400,
-            label     = "+",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            tooltip   = "Knowledge DM. Add to Knowledge Test and tests involving education or learning."
-        },
-        {
-            attr      = "PREDM",
-            pos       = {-0.035, 0.2,-0.13},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 400,
-            label     = "+",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            tooltip   = "Presence DM. Add to Rally Test and tests involving persuasion or convincing others."
-        },
-        {
-            attr      = "POWDM",
-            pos       = {0.075, 0.2,-0.13},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 400,
-            label     = "+",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            tooltip   = "Willpower DM. Add to Morale Test and tests involving courage or bravery for self."
-        },
-        {
-            attr      = "STRDM",
-            pos       = {0.190, 0.2,-0.13},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 400,
-            label     = "+",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            tooltip   = "Strength DM. Add to Attacker Close Combat Damage Test and anything involving using muscles."
-        },
-        {
-            attr      = "FORDM",
-            pos       = {0.305, 0.2,-0.13},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 400,
-            label     = "+",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            tooltip   = "Fortitude DM. Add to Fortitude Test and anything involving health and resistance to disease."
-        },
-        {
-            attr      = "MOVDM",
-            pos       = {0.420, 0.2,-0.13},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 400,
-            label     = "+",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            tooltip   = "Move DM. Add to Move Test and anything involving dodging or balance."
-        },
-        {
-            attr      = "SIZDM",
-            pos       = {0.533, 0.2,-0.13},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 400,
-            label     = "+",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            tooltip   = "Size DM. Add to Size Test and anything involving physical size."
-        },
-        {
-            attr      = "ZEDDM",
-            pos       = {0.645, 0.2,-0.13},
-            rows      = 1.1,
-            width     = 1000,
-            font_size = 400,
-            label     = "+",
-            value     = "",
-            alignment = 3,
-            scale     = {0.05, 0.05, 0.05},
-            tooltip   = "Zed DM. Add to Effect and Damage using Magic or Magic items."
-        },
-        --End of textboxes
+          attr      = "HastyActions",
+          pos       = {0.230, 0.2,0.583},
+          rows      = 1.2,
+          width     = 680,
+          font_size = 400,
+          label     = "0",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Additional Actions.\nFor each +1 Action, must penalize REF and related Attribute with DM -3 until the next Initiative ."
+      },
+      {
+          attr      = "MeleeAttack",
+          pos       = {0.230, 0.2,0.648},
+          rows      = 1.2,
+          width     = 680,
+          font_size = 400,
+          label     = "0",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Close Combat Attacker DM.\nUses CCA DM plus Expert <weapon>, and weapon traits."
+      },
+      {
+          attr      = "MeleeDefend",
+          pos       = {0.230, 0.2,0.715},
+          rows      = 1.2,
+          width     = 680,
+          font_size = 400,
+          label     = "0",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Close Combat Defender DM.\nUses CCA DM plus Expert <weapon>, plus weapon and armor traits."
+      },
+      {
+          attr      = "RangeAttack",
+          pos       = {0.230, 0.2,0.782},
+          rows      = 1.2,
+          width     = 680,
+          font_size = 400,
+          label     = "0",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Range Combat Attacker DM.\nUses RCA DM plus Expert <weapon>, and weapon traits."
+      },
+      {
+          attr      = "RangeDefend",
+          pos       = {0.230, 0.2,0.848},
+          rows      = 1.2,
+          width     = 680,
+          font_size = 400,
+          label     = "0",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Range Combat Defender DM.\nUses REF DM plus armor traits."
+      },
+      {
+          attr      = "CCA",
+          pos       = {-0.610, 0.2,-0.21},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 800,
+          label     = "7",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          validation= 2,
+          tooltip   = "Close Combat Ability. Hit Test."
+      },
+      {
+          attr      = "RCA",
+          pos       = {-0.495, 0.2,-0.21},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 800,
+          label     = "7",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          validation= 2,
+          tooltip   = "Range Combat Ability. Hit Test."
+      },
+      {
+          attr      = "REF",
+          pos       = {-0.382, 0.2,-0.21},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 800,
+          label     = "7",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          validation= 2,
+          tooltip   = "Reflexes. Detect Tests and Defender Hit Tests."
+      },
+      {
+          attr      = "INT",
+          pos       = {-0.267, 0.2,-0.21},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 800,
+          label     = "7",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          validation= 2,
+          tooltip   = "Intellect. Learning new things."
+      },
+      {
+          attr      = "KNO",
+          pos       = {-0.150, 0.2,-0.21},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 800,
+          label     = "7",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          validation= 2,
+          tooltip   = "Knowledge. Knowing things."
+      },
+      {
+          attr      = "PRE",
+          pos       = {-0.035, 0.2,-0.21},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 800,
+          label     = "7",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          validation= 2,
+          tooltip   = "Presence. Command, Beauty, Grace, and Charm."
+      },
+      {
+          attr      = "POW",
+          pos       = {0.075, 0.2,-0.21},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 800,
+          label     = "7",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          validation= 2,
+          tooltip   = "Willpower. Resist effects of mental, psychological, and emotional attacks."
+      },
+      {
+          attr      = "STR",
+          pos       = {0.190, 0.2,-0.21},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 800,
+          label     = "7",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          validation= 2,
+          tooltip   = "Strength. Raw muscularity. Attacker Damage Test."
+      },
+      {
+          attr      = "FOR",
+          pos       = {0.305, 0.2,-0.21},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 800,
+          label     = "7",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          validation= 2,
+          tooltip   = "Fortitude. Health and ability to ignore to damage. Defender Damage Test."
+      },
+      {
+          attr      = "MOV",
+          pos       = {0.420, 0.2,-0.21},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 800,
+          label     = "7",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          validation= 2,
+          tooltip   = "Movement rate for Running."
+      },
+      {
+          attr      = "SIZ",
+          pos       = {0.533, 0.2,-0.21},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 800,
+          label     = "7",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          validation= 2,
+          tooltip   = "Size. Physical size index. Heavy characters usually can take more physical damage."
+      },
+      {
+          attr      = "ZED",
+          pos       = {0.645, 0.2,-0.21},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 800,
+          label     = "7",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          validation= 2,
+          tooltip   = "Zero-th factor. Affects the range of magic abilities. Start with this much mana to spend."
+      },
+      {
+          attr      = "CCADM",
+          pos       = {-0.610, 0.2,-0.13},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 400,
+          label     = "+",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Close Combat Ability DM. Add to Close Combat Hit Test."
+      },
+      {
+          attr      = "RCADM",
+          pos       = {-0.495, 0.2,-0.13},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 400,
+          label     = "+",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Range Combat Ability DM. Add to Attacker Range Combat Hit Test."
+      },
+      {
+          attr      = "REFDM",
+          pos       = {-0.382, 0.2,-0.13},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 400,
+          label     = "+",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Reflexes DM. Add to Defender Range Combat Hit Test and Defender Detect Test."
+      },
+      {
+          attr      = "INTDM",
+          pos       = {-0.267, 0.2,-0.13},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 400,
+          label     = "+",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Intellect DM. Add to Initiative Test and tests involving intelligence or guessing."
+      },
+      {
+          attr      = "KNODM",
+          pos       = {-0.150, 0.2,-0.13},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 400,
+          label     = "+",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Knowledge DM. Add to Knowledge Test and tests involving education or learning."
+      },
+      {
+          attr      = "PREDM",
+          pos       = {-0.035, 0.2,-0.13},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 400,
+          label     = "+",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Presence DM. Add to Rally Test and tests involving persuasion or convincing others."
+      },
+      {
+          attr      = "POWDM",
+          pos       = {0.075, 0.2,-0.13},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 400,
+          label     = "+",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Willpower DM. Add to Morale Test and tests involving courage or bravery for self."
+      },
+      {
+          attr      = "STRDM",
+          pos       = {0.190, 0.2,-0.13},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 400,
+          label     = "+",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Strength DM. Add to Attacker Close Combat Damage Test and anything involving using muscles."
+      },
+      {
+          attr      = "FORDM",
+          pos       = {0.305, 0.2,-0.13},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 400,
+          label     = "+",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Fortitude DM. Add to Fortitude Test and anything involving health and resistance to disease."
+      },
+      {
+          attr      = "MOVDM",
+          pos       = {0.420, 0.2,-0.13},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 400,
+          label     = "+",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Move DM. Add to Move Test and anything involving dodging or balance."
+      },
+      {
+          attr      = "SIZDM",
+          pos       = {0.533, 0.2,-0.13},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 400,
+          label     = "+",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Size DM. Add to Size Test and anything involving physical size."
+      },
+      {
+          attr      = "ZEDDM",
+          pos       = {0.645, 0.2,-0.13},
+          rows      = 1.1,
+          width     = 1000,
+          font_size = 400,
+          label     = "+",
+          value     = "",
+          alignment = 3,
+          scale     = {0.05, 0.05, 0.05},
+          tooltip   = "Zed DM. Add to Effect and Damage using Magic or Magic items."
+      },
+      --End of textboxes
     }
 }
 
@@ -1502,7 +1562,7 @@ function click_textbox(i, value, selected, attr)
       if saveAttrNames[attr] == true then updateSave() end
   end
 
-  if attr != "IndexUC" then return end
+  if attr ~= "IndexUC" then return end
   setUCValue()
 end
 
@@ -1572,9 +1632,14 @@ function updateOtherStats()
   updateFavorDice()
   updateCellburn()
   updateManapool()
-
   updateBackName()
   updateProfileRank()
+
+  updateHastyActions()
+  updateMeleeAttack()
+  updateMeleeDefend()
+  updateRangeAttack()
+  updateRangeDefend()
 end
 
 function getScalarValue(givenIndex)
@@ -1938,13 +2003,9 @@ end
 function updateRecovery()
   local starCount = getStarCount() or 1
 
-  print(' starCount ' .. starCount)
-
   local calcRecovery = getRecovery()
   local valueRecovery = math.floor(starCount/3) + (getValue("Recovery", true) or calcRecovery)
   local originalRecovery = getValue("Recovery", true)
-
-  print(starCount .. " > " .. calcRecovery .. " > " .. valueRecovery)
 
   local inputIndex = textInputHash["Recovery"]
   self.editInput({index=inputIndex-1, label=valueRecovery, value=originalRecovery})
@@ -2083,6 +2144,47 @@ function updateManapool()
 
   local inputIndex = textInputHash["Manapool"]
   self.editInput({index=inputIndex-1, label=valueManapool, value=originalManapool})
+end
+
+function updateHastyActions()
+  local valueREF = getValue("REF")
+  local dmREF = getDMByValue(valueREF)
+  local calcHastyActions = "+" .. math.max(0, math.floor(dmREF/3))
+
+  local inputIndex = textInputHash["HastyActions"]
+  self.editInput({index=inputIndex-1, label=calcHastyActions, value=calcHastyActions}) 
+end
+
+function updateMeleeAttack() 
+  local valueCCA = getValue("CCA")
+  local calcMeleeAttack = getDMByValue(valueCCA, true)
+
+  local inputIndex = textInputHash["MeleeAttack"]
+  self.editInput({index=inputIndex-1, label=calcMeleeAttack, value=calcMeleeAttack}) 
+end
+
+function updateMeleeDefend() 
+  local valueCCA = getValue("CCA")
+  local calcMeleeDefend = getDMByValue(valueCCA, true)
+
+  local inputIndex = textInputHash["MeleeDefend"]
+  self.editInput({index=inputIndex-1, label=calcMeleeDefend, value=calcMeleeDefend}) 
+end
+
+function updateRangeAttack() 
+  local valueRCA = getValue("RCA")
+  local calcRangeAttack = getDMByValue(valueRCA, true)
+
+  local inputIndex = textInputHash["RangeAttack"]
+  self.editInput({index=inputIndex-1, label=calcRangeAttack, value=calcRangeAttack}) 
+end
+
+function updateRangeDefend() 
+  local valueREF = getValue("REF")
+  local calcRangeDefend = getDMByValue(valueREF, true)
+
+  local inputIndex = textInputHash["RangeDefend"]
+  self.editInput({index=inputIndex-1, label=calcRangeDefend, value=calcRangeDefend}) 
 end
 
 --Dud function for if you have a background on a counter
